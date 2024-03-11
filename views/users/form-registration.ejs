@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <link rel="stylesheet" href="/public/css/style.css"> 
+
+</head>
+<body>
+    <div class="container">
+        <form action="form-registration" class="needs-validation" method="post">
+          
+            <h2>Profile User Details</h2>
+            
+              <div class="form-row">
+               <div class="col-md-4 mb-3">
+                <label for="firstName">First name<span class="star">*</span></label>
+                <input type="text" class="form-control" id="" placeholder="First name" value="" name="personalInformation.firstName" required>
+                
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="middleName">Middle Name</label>
+                <input type="text" class="form-control" id="" placeholder="Middle Name" value="" name="personalInformation.middleName" required>
+          
+              </div>
+            <div class="col-md-4 mb-3">
+                <label for="lastName">Last Name<span class="star">*</span></label>
+                <input type="text" class="form-control" id="" placeholder="Last Name" value="" name="personalInformation.lastName" required>
+          
+            </div>
+             </div>
+
+
+             <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label class="mr-sm-2" for="gender">Gender<span class="star">*</span> </label>
+                    <select class="custom-select mr-sm-2" id="" name="personalInformation.gender" required>
+                      <option selected>Choose</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                
+                    <label for="birthday">Date Of Birth:<span class="star">*</span></label>
+                    <input type="date" class="form-control" id="" name="personalInformation.birthday" required>
+                    
+                  </div>
+            
+            </div>
+
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="birthTime">Birth Time<span class="star">*</span></label>
+                <input type="time" class="form-control" id="birthTime" placeholder="HH:mm" name="personalInformation.birthTime" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="birthPlace">Birth Place<span class="star">*</span></label>
+                <input type="text" class="form-control" id="" placeholder="Birth Place" name="personalInformation.birthPlace" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="nativePlace">Native Place<span class="star">*</span></label>
+                <input type="text" class="form-control" id="" placeholder="Native Place" name="personalInformation.nativePlace" required>
+            </div>
+        </div>
+
+            <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="religion">Religion<span class="star">*</span></label>
+                <input type="text" class="form-control" id="" placeholder="Religion" name="personalInformation.religion" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cast">Cast<span class="star">*</span></label>
+                <input type="text" class="form-control" id="" placeholder="Cast" name="personalInformation.cast" required>
+            </div>
+        </div>
+
+            
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label class="mr-sm-2" for="figure">Figure<span class="star">*</span></label>
+                    <select class="custom-select mr-sm-2" id="" name="personalInformation.figure">
+                        <option selected>Choose...</option>
+                        <option value="Average">Average</option>
+                        <option value="Athletic">Athletic</option>
+                        <option value="Slim">Slim</option>
+                        <option value="Fit">Fit</option>
+                        <option value="Muscular">Muscular</option>
+                        <option value="Curvy">Curvy</option>
+                        <option value="Slightly Overweight">Slightly Overweight</option>
+                      </select>
+                </div>
+            <div class="col-md-4 mb-3">
+                <label for="weight">Weight<span class="star">*</span></label>
+                <input type="number" class="form-control" id="" placeholder="Weight" name="personalInformation.weight" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="height">Height<span class="star">*</span></label>
+                <input type="number" class="form-control" id="" placeholder="Height" name="personalInformation.height" required>
+            </div>
+        </div>
+
+
+            <div class="form-row">
+
+            <div class="col-md-4 mb-3">
+                <label class="mr-sm-2" for="complexion">Complexion<span class="star">*</span></label>
+                <select class="custom-select mr-sm-2" id="" name="personalInformation.complexion">
+                  <option selected>Choose...</option>
+                  <option value="Very Dark">Very dark</option>
+                  <option value="Dark">Dark</option>
+                  <option value="Whitish">Whitish</option>
+                  <option value="Fair">Fair</option>
+                  <option value="Very Fair">Very Fair</option>
+                </select>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label class="mr-sm-2" for="bloodGroup">Blood Group<span class="star">*</span></label>
+                <select class="custom-select mr-sm-2" id="" name="personalInformation.bloodGroup">
+                    <option selected>Choose...</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                  </select>
+            </div>
+              
+        </div>
+        
+            <div class="form-row">
+               
+            <div class="col-md-4 mb-3">
+                <label class="mr-sm-2" for="maritalStatus">Marital Status<span class="star">*</span></label>
+                <select class="custom-select mr-sm-2" id="" name="personalInformation.maritalStatus" required>
+                  <option selected>Choose...</option>
+                  <option value="Single">Single</option>
+                  <option value="Widow">Widow</option>
+                  <option value="Widower">Widower</option>
+                  <option value="Divorce">Divorce</option>
+                </select>
+              </div>
+          
+        </div> 
+        
+            <h4>Language Known</h4>
+
+            <div class="form-row">
+
+                <div class="col-md-4 mb-3">
+                    <label class="mr-sm-2" for="language1">Language<span class="star">*</span></label>
+                    <select class="custom-select mr-sm-2" id="" name="languagesKnown.language1" required>
+                      <option selected>Choose...</option>
+                      <option value="Assamese">Assamese</option>
+                      <option value="Bengali">Bengali</option>
+                      <option value="Bodo">Bodo</option>
+                      <option value="Dogri">Dogri</option>
+                      <option value="English">English</option>
+                      <option value="Gujarati">Gujarati</option>
+                      <option value="Hindi">Hindi</option>
+                      <option value="Kannada">Kannada</option>
+                      <option value="Kashmiri">Kashmiri</option>
+                      <option value="Konkani">Konkani</option>
+                      <option value="Maithili">Maithili</option>
+                      <option value="Malayalam">Malayalam</option>
+                      <option value="Marathi">Marathi</option>
+                      <option value="Meitei">Meitei</option>
+                      <option value="Nepali">Nepali</option>
+                      <option value="Odia">Odia</option>
+                      <option value="Punjabi">Punjabi</option>
+                      <option value="Sanskrit">Sanskrit</option>
+                      <option value="Santali">Santali</option>
+                      <option value="Sandhi">Sandhi</option>
+                      <option value="Tamil">Tamil</option>
+                      <option value="Telugu">Telugu</option>
+                      <option value="Urdu">Urdu</option>
+
+
+                    </select>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label class="mr-sm-2" for="language2">Language<span class="star">*</span></label>
+                    <select class="custom-select mr-sm-2" id="" name="languagesKnown.language2" required>
+                        <option selected>Choose...</option>
+                        <option value="Assamese">Assamese</option>
+                        <option value="Bengali">Bengali</option>
+                        <option value="Bodo">Bodo</option>
+                        <option value="Dogri">Dogri</option>
+                        <option value="English">English</option>
+                        <option value="Gujarati">Gujarati</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Kannada">Kannada</option>
+                        <option value="Kashmiri">Kashmiri</option>
+                        <option value="Konkani">Konkani</option>
+                        <option value="Maithili">Maithili</option>
+                        <option value="Malayalam">Malayalam</option>
+                        <option value="Marathi">Marathi</option>
+                        <option value="Meitei">Meitei</option>
+                        <option value="Nepali">Nepali</option>
+                        <option value="Odia">Odia</option>
+                        <option value="Punjabi">Punjabi</option>
+                        <option value="Sanskrit">Sanskrit</option>
+                        <option value="Santali">Santali</option>
+                        <option value="Sandhi">Sandhi</option>
+                        <option value="Tamil">Tamil</option>
+                        <option value="Telugu">Telugu</option>
+                        <option value="Urdu">Urdu</option>
+                      </select>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label class="mr-sm-2" for="language3">Language</label>
+                    <select class="custom-select mr-sm-2" id="" name="languagesKnown.language3">
+                        <option value="" selected disabled>Choose...</option>
+                      <option value="Assamese">Assamese</option>
+                      <option value="Bengali">Bengali</option>
+                      <option value="Bodo">Bodo</option>
+                      <option value="Dogri">Dogri</option>
+                      <option value="English">English</option>
+                      <option value="Gujarati">Gujarati</option>
+                      <option value="Hindi">Hindi</option>
+                      <option value="Kannada">Kannada</option>
+                      <option value="Kashmiri">Kashmiri</option>
+                      <option value="Konkani">Konkani</option>
+                      <option value="Maithili">Maithili</option>
+                      <option value="Malayalam">Malayalam</option>
+                      <option value="Marathi">Marathi</option>
+                      <option value="Meitei">Meitei</option>
+                      <option value="Nepali">Nepali</option>
+                      <option value="Odia">Odia</option>
+                      <option value="Punjabi">Punjabi</option>
+                      <option value="Sanskrit">Sanskrit</option>
+                      <option value="Santali">Santali</option>
+                      <option value="Sandhi">Sandhi</option>
+                      <option value="Tamil">Tamil</option>
+                      <option value="Telugu">Telugu</option>
+                      <option value="Urdu">Urdu</option>
+                      </select>
+                </div>  
+            </div>
+            
+
+            <h4>Education Details</h4>
+
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label class="mr-sm-2" for="">Academics<span class="star">*</span></label>
+                    <select class="custom-select mr-sm-2" id="academics" name="educationDetails.type" onchange="toggleFieldsAcademic()" required>
+                      <option selected>Choose...</option>
+                      <option value="10th">10th</option>
+                      <option value="Diploma">Diploma</option>
+                      <option value="12th">12th</option>
+                      <option value="Graduation">Graduation</option>
+                      <option value="Post Graduation">Post Graduation</option>
+                      <option value="PhD">PhD</option>
+                    </select>
+                </div>
+            
+            <div class="col-md-4 mb-3" id="10thFields" style="display: none;">
+                <label class="mr-sm-2" for="">School Name</label>
+                <input type="text" class="form-control" id="" name="educationDetails.tenthSchoolName">
+        
+                <label class="mr-sm-2" for="">Marks</label>
+                <input type="number" class="form-control" id="" name="educationDetails.tenthMarks">
+            </div>
+
+            <div class="col-md-4 mb-3" id="diplomaFields" style="display: none;">
+                <label class="mr-sm-2" for="">College Name</label>
+                <input type="text" class="form-control" id="" name="educationDetails.diplomaCollegeName">
+              
+                <label class="mr-sm-2" for="">Course Name</label>
+                <input type="text" class="form-control" id="" name="educationDetails.diplomaCourseName">
+        
+                <label class="mr-sm-2" for="">Marks</label>
+                <input type="number" class="form-control" id="" name="educationDetails.diplomaMarks">
+            </div>
+
+            <div class="col-md-4 mb-3" id="12thFields" style="display: none;">
+                <label class="mr-sm-2" for="">College Name</label>
+                <input type="text" class="form-control" id="" name="educationDetails.twelfthCollegeName">
+              
+                <label class="mr-sm-2" for="">Course Name</label>
+                <input type="text" class="form-control" id="" name="educationDetails.twelfthCourseName">
+        
+                <label class="mr-sm-2" for="">Marks</label>
+                <input type="number" class="form-control" id="" name="educationDetails.twelfthMarks">
+            </div>
+
+            <div class="col-md-4 mb-3" id="graduationFields" style="display: none;">
+                <label class="mr-sm-2" for="">College Name</label>
+                <input type="text" class="form-control" id="" name="educationDetails.graduationCollegeName">
+              
+                <label class="mr-sm-2" for="">Course Name</label>
+                <input type="text" class="form-control" id="" name="educationDetails.graduationCourseName">
+        
+                <label class="mr-sm-2" for="">Marks</label>
+                <input type="number" class="form-control" id="" name="educationDetails.graduationMarks">
+            </div>
+
+            <div class="col-md-4 mb-3" id="postGraduationFields" style="display: none;">
+                <label class="mr-sm-2" for="">College Name</label>
+                <input type="text" class="form-control" id="" name="educationDetails.postGraduationCollegeName">
+              
+                <label class="mr-sm-2" for="">Course Name</label>
+                <input type="text" class="form-control" id="" name="educationDetails.postGraduationCourseName">
+              
+                <label class="mr-sm-2" for="">specialization</label>
+                <input type="text" class="form-control" id="" name="educationDetails.postGraduationSpecialization">  
+        
+                <label class="mr-sm-2" for="">Marks</label>
+                <input type="number" class="form-control" id="" name="educationDetails.postGraduationMarks">
+            </div>
+
+            <div class="col-md-4 mb-3" id="phdFields" style="display: none;">
+                <label class="mr-sm-2" for="">College Name</label>
+                <input type="text" class="form-control" id="" name="educationDetails.phdCollegeName">
+              
+                <label class="mr-sm-2" for="">Course Name</label>
+                <input type="text" class="form-control" id="" name="educationDetails.phdCourseName">
+                
+                <label class="mr-sm-2" for="">specialization</label>
+                <input type="text" class="form-control" id="" name="educationDetails.phdSpecialization">
+        
+                <label class="mr-sm-2" for="">Marks</label>
+                <input type="number" class="form-control" id="" name="educationDetails.phdMarks">
+            </div>
+
+            </div>
+
+
+        <h4>Professional Details</h4>
+
+        <div class="form-row">
+
+            <div class="col-md-4 mb-3">
+                <label class="mr-sm-2" for="professionalDetails">Profession<span class="star">*</span></label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="professionalDetails.type" onchange="toggleFields()">
+                    <option selected>Choose...</option>
+                    <option value="1">Service</option>
+                    <option value="2">Business</option>
+                </select>
+            </div>
+        
+            <!-- Service Fields -->
+            <div class="col-md-4 mb-3" id="serviceFields" style="display: none;">
+                <label class="mr-sm-2" for="serviceName">Company Name<span class="star">*</span></label>
+                <input type="text" class="form-control" id="serviceName" name="professionalDetails.serviceName">
+        
+                <label class="mr-sm-2" for="serviceAddress">Address<span class="star">*</span></label>
+                <input type="text" class="form-control" id="serviceAddress" name="professionalDetails.serviceAddress">
+        
+                <label class="mr-sm-2" for="serviceDesignation">Designation<span class="star">*</span></label>
+                <input type="text" class="form-control" id="serviceDesignation" name="professionalDetails.serviceDesignation">
+        
+                <label class="mr-sm-2" for="serviceSalary">Salary<span class="star">*</span></label>
+                <input type="number" class="form-control" id="serviceSalary" name="professionalDetails.serviceSalary">
+            </div>
+        
+            <!-- Business Fields -->
+            <div class="col-md-4 mb-3 business-fields" id="businessFields" style="display: none;">
+                <label class="mr-sm-2" for="businessName">Business Name<span class="star">*</span></label>
+                <input type="text" class="form-control" id="businessName" name="professionalDetails.businessName">
+        
+                <label class="mr-sm-2" for="businessAddress">Business Address<span class="star">*</span></label>
+                <input type="text" class="form-control" id="businessAddress" name="professionalDetails.businessAddress">
+        
+                <label class="mr-sm-2" for="businessDesignation">Designation<span class="star">*</span></label>
+                <input type="text" class="form-control" id="businessDesignation" name="professionalDetails.businessDesignation">
+        
+                <label class="mr-sm-2" for="businessIncome">Income<span class="star">*</span></label>
+                <input type="number" class="form-control" id="businessIncome" name="professionalDetails.businessIncome">
+            </div>
+        
+        </div>
+            <h4>About My Father </h4>
+            <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="fatherFirstName">First Name<span class="star">*</span></label>
+                <input type="text" class="form-control" id="" placeholder="First Name" name="fatherDetails.firstName" required>
+            </div> 
+            <div class="col-md-4 mb-3">
+                <label for="fatherMiddleName">Middle Name</label>
+                <input type="text" class="form-control" id="" placeholder="Middle Name" name="fatherDetails.middleName">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="fatherLastName">Last Name<span class="star">*</span></label>
+                <input type="text" class="form-control" id="" placeholder="Last Name" name="fatherDetails.lastName" required>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <h6>Is alive?  <span class="star">*</span></h6>
+              <label>
+                <input type="radio" name="fatherDetails.status" value="alive" onclick="showFieldsFather()"> Alive
+              </label>
+              <label>
+                <input type="radio"  name="fatherDetails.status" value="expired" onclick="hideFieldsFather()"> Expired
+              </label>
+            </div>
+              <div class="form-row">
+                <div class="col-md-3 mb-3" id="aliveFieldsFather" style="display: none;">
+                  <label for="contact">Contact:</label>
+                  <input type="number" class="form-control" id="contact" name="fatherDetails.aliveFields.contact" maxlength="10" minlength="10">
+              </div> 
+                  <div class="col-md-3 mb-3" id="aliveFieldsFather1" style="display: none;">
+                  <label class="mr-sm-2" for="fatherProfession">Profession:</label>
+                  <select class="custom-select mr-sm-2" id="fatherProfession" name="fatherDetails.aliveFields.profession">
+                    <option selected>Choose...</option>
+                    <option value="Service">Service</option>
+                    <option value="Business">Business</option>
+                    <option value="Retired">Retired</option>
+                  </select>
+              </div>
+        </div> 
+
+
+            <h4>About My Mother</h4>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="motherFirstName">First Name<span class="star">*</span></label>
+                    <input type="text" class="form-control" id="" placeholder="First Name" name="motherDetails.firstName" required>
+                </div> 
+                <!-- <div class="col-md-4 mb-3">
+                    <label for="">Middle Name</label>
+                    <input type="text" class="form-control" id="" placeholder="Middle Name" value="">
+                </div> -->
+                <div class="col-md-4 mb-3">
+                    <label for="motherLastName">Last Name<span class="star">*</span></label>
+                    <input type="text" class="form-control" id="" placeholder="Last Name" name="motherDetails.lastName" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+            <h6>Is alive?  <span class="star">*</span></h6>
+
+                <label>
+                    <input type="radio" name="motherDetails.status" value="alive" onclick="showFieldsMother()"> Alive
+                  </label>
+                  <label>
+                    <input type="radio" name="motherDetails.status" value="expired" onclick="hideFieldsMother()"> Expired
+                  </label>
+                </div> 
+                  <div class="form-row">
+                  <div class="col-md-3 mb-3" id="aliveFieldsMother" style="display: none;">
+                    <label for="contact">Contact:</label>
+                    <input type="number" class="form-control" id="contact" name="motherDetails.aliveFields.contact" maxlength="10" minlength="10">
+                </div> 
+                    <div class="col-md-3 mb-3" id="aliveFieldsMother1" style="display: none;">
+                    <label class="mr-sm-2" for="motherProfession">Profession:</label>
+                    <select class="custom-select mr-sm-2" id="motherProfession" name="motherDetails.aliveFields.profession">
+                      <option selected>Choose...</option>
+                      <option value="Service">Service</option>
+                      <option value="Business">Business</option>
+                      <option value="Retired">Retired</option>
+                      <option value="House Wife">House Wife</option>
+                    </select>
+                </div>
+             
+
+            </div>
+
+            <h4>Maternal Surname</h4>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="maternalSurName">Surname<span class="star">*</span></label>
+                    <input type="text" class="form-control" id="" placeholder="Surname" name="maternalSurname.surName" required>
+                </div> 
+            </div>
+            
+            <h4>Relatives Surname</h4>
+<div class="form-row">
+    <div class="col-md-4 mb-3">
+        <label for="relativesSurname.surName1">Surname</label>
+        <input type="text" class="form-control" id="" placeholder="Surname" name="relativesSurname.surName1">
+    </div>
+    <div class="col-md-4 mb-3">
+        <label for="relativesSurname.surName2">Surname</label>
+        <input type="text" class="form-control" id="" placeholder="Surname" name="relativesSurname.surName2">
+    </div>
+    <div class="col-md-4 mb-3">
+        <label for="relativesSurname.surName3">Surname</label>
+        <input type="text" class="form-control" id="" placeholder="Surname" name="relativesSurname.surName3">
+    </div>
+</div>
+
+
+            <h3>Sibling Details</h3>
+
+            <h5>Elder Sibling</h5>
+<div class="form-row">
+        <div class="col-md-4 mb-3">
+            <label for="elderSiblings.elderSiblingsOneFirstName">First Name</label>
+            <input type="text" name="elderSiblings.elderSiblingsOneFirstName" placeholder="First Name" class="form-control">
+        </div>
+        <div class="col-md-4 mb-3">
+            <label for="elderSiblings.elderSiblingsOneLastName">Last Name</label>
+            <input type="text" name="elderSiblings.elderSiblingsOneLastName" placeholder="Last Name" class="form-control">
+        </div>
+        <div class="col-md-4 mb-3">
+            <label class="mr-sm-2" for="maritalStatus">Marital Status</label>
+            <select class="custom-select mr-sm-2" id="" name="elderSiblings.elderSiblingsOneMaritalStatus" class="form-control">
+              <option value="" selected disabled>Choose...</option>
+              <option value="Single">Single</option>
+              <option value="Widow">Widow</option>
+              <option value="Widower">Widower</option>
+              <option value="Divorce">Divorce</option>
+            </select>
+        </div>
+        
+    
+        <div class="col-md-4 mb-3">
+            <label for="elderSiblings.elderSiblingsTwoFirstName">First Name</label>
+            <input type="text" name="elderSiblings.elderSiblingsTwoFirstName" placeholder="First Name" class="form-control">
+        </div>
+        <div class="col-md-4 mb-3">
+            <label for="elderSiblings.elderSiblingsTwoLastName">Last Name</label>
+            <input type="text" name="elderSiblings.elderSiblingsTwoLastName" placeholder="Last Name" class="form-control">
+        </div>
+        <div class="col-md-4 mb-3">
+            <label class="mr-sm-2" for="maritalStatus">Marital Status</label>
+            <select class="custom-select mr-sm-2" id="" name="elderSiblings.elderSiblingsTwoMaritalStatus" >
+                <option value="" selected disabled>Choose...</option>
+              <option value="Single">Single</option>
+              <option value="Widow">Widow</option>
+              <option value="Widower">Widower</option>
+              <option value="Divorce">Divorce</option>
+            </select>
+        </div>
+       
+       
+        <div class="col-md-4 mb-3">
+            <label for="elderSiblings.elderSiblingsThreeFirstName">First Name</label>
+            <input type="text" name="elderSiblings.elderSiblingsThreeFirstName" placeholder="First Name" class="form-control">
+        </div>
+        <div class="col-md-4 mb-3">
+            <label for="elderSiblings.elderSiblingsThreeLastName">Last Name</label>
+            <input type="text" name="elderSiblings.elderSiblingsThreeLastName" placeholder="Last Name" class="form-control">
+        </div>
+        <div class="col-md-4 mb-3">
+            <label class="mr-sm-2" for="maritalStatus">Marital Status</label>
+            <select class="custom-select mr-sm-2" id="" name="elderSiblings.elderSiblingsThreeMaritalStatus" >
+                <option value="" selected disabled>Choose...</option>
+              <option value="Single">Single</option>
+              <option value="Widow">Widow</option>
+              <option value="Widower">Widower</option>
+              <option value="Divorce">Divorce</option>
+            </select>
+        </div>
+
+
+</div>
+
+<h5>Younger Sibling</h5>
+<div class="form-row">
+    
+    <div class="col-md-4 mb-3">
+        <label for="youngerSiblings.youngerSiblingsOneFirstName">First Name</label>
+        <input type="text" name="youngerSiblings.youngerSiblingsOneFirstName" placeholder="First Name" class="form-control">
+    </div>
+    
+    <div class="col-md-4 mb-3">
+        <label for="youngerSiblings.youngerSiblingsOneLastName">Last Name</label>
+        <input type="text" name="youngerSiblings.youngerSiblingsOneLastName" placeholder="Last Name" class="form-control">
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <label class="mr-sm-2" for="maritalStatus">Marital Status</label>
+        <select class="custom-select mr-sm-2" id="" name="youngerSiblings.youngerSiblingsOneMaritalStatus" >
+            <option value="" selected disabled>Choose...</option>
+          <option value="Single">Single</option>
+          <option value="Widow">Widow</option>
+          <option value="Widower">Widower</option>
+          <option value="Divorce">Divorce</option>
+        </select>
+    </div>
+    
+    <div class="col-md-4 mb-3">
+        <label for="youngerSiblings.youngerSiblingsTwoFirstName">First Name</label>
+        <input type="text" name="youngerSiblings.youngerSiblingsTwoFirstName" placeholder="First Name" class="form-control">
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <label for="youngerSiblings.youngerSiblingsTwoLastName">Last Name</label>
+        <input type="text" name="youngerSiblings.youngerSiblingsTwoLastName" placeholder="Last Name" class="form-control">
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <label class="mr-sm-2" for="maritalStatus">Marital Status</label>
+        <select class="custom-select mr-sm-2" id="" name="youngerSiblings.youngerSiblingsTwoMaritalStatus" >
+            <option value="" selected disabled>Choose...</option>
+          <option value="Single">Single</option>
+          <option value="Widow">Widow</option>
+          <option value="Widower">Widower</option>
+          <option value="Divorce">Divorce</option>
+        </select>
+    </div>
+        
+    
+    <div class="col-md-4 mb-3">
+        <label for="youngerSiblings.youngerSiblingsThreeFirstName">First Name</label>
+        <input type="text" name="youngerSiblings.youngerSiblingsThreeFirstName" placeholder="First Name" class="form-control">
+    </div>    
+    <div class="col-md-4 mb-3">
+        <label for="youngerSiblings.youngerSiblingsThreeLastName">Last Name</label>
+        <input type="text" name="youngerSiblings.youngerSiblingsThreeLastName" placeholder="Last Name" class="form-control">
+    </div>
+    <div class="col-md-4 mb-3">
+        <label class="mr-sm-2" for="maritalStatus">Marital Status</label>
+        <select class="custom-select mr-sm-2" id="" name="youngerSiblings.youngerSiblingsThreeMaritalStatus" >
+            <option value="" selected disabled>Choose...</option>
+            <option value="Single">Single</option>
+            <option value="Widow">Widow</option>
+            <option value="Widower">Widower</option>
+            <option value="Divorce">Divorce</option>
+          </select>
+    </div>
+       
+</div>
+
+        <h3>Spouse Preference</h3>
+
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label class="mr-sm-2" for="spouseComplexion">Complexion<span class="star">*</span></label>
+                <select class="custom-select mr-sm-2" id="" name="spousePreference.complexion">
+                  <option selected>Choose...</option>
+                  <option value="Very Dark">Very Dark</option>
+                  <option value="Dark">Dark</option>
+                  <option value="Whitish">Whitish</option>
+                  <option value="Fair">Fair</option>
+                  <option value="Very Fair">Very Fair</option>
+                </select>
+              </div>
+            <div class="col-md-4 mb-3">
+                <label for="spouseHeight">Height</label>
+                <input type="number" class="form-control" id="" placeholder="Height" name="spousePreference.height">
+            </div>
+        </div>
+        <div class="form-row"> 
+       
+            <div class="col-md-4 mb-3">
+                <label class="mr-sm-2" for="physique">Physique<span class="star">*</span></label>
+                <select class="custom-select mr-sm-2" id="" name="spousePreference.physique">
+                    <option selected>Choose...</option>
+                    <option value="Average">Average</option>
+                    <option value="Athletic">Athletic</option>
+                    <option value="Slim">Slim</option>
+                    <option value="Fit">Fit</option>
+                    <option value="Muscular">Muscular</option>
+                    <option value="Curvy">Curvy</option>
+                    <option value="Slightly Overweight">Slightly Overweight</option>
+                  </select>
+            </div>
+        </div>
+        
+            <h3>Other Details</h3>
+
+            <div class="form-row">
+                <div class="col-md-12 mb-3">
+                <label for="aboutSelf">About Self</label>
+                <textarea class="form-control" id="aboutSelf" name="otherDetails.aboutSelf" rows="10"></textarea>
+              </div>
+
+           
+        </div>
+        <div class="form-row">
+       
+            <div class="col-md-4 mb-3">
+                <label class="mr-sm-2" for="foodPreference">Food Preference<span class="star">*</span></label>
+                <select class="custom-select mr-sm-2" id="" name="otherDetails.foodPreference">
+                    <option selected>Choose...</option>
+                    <option value="Pure Veg">Pure Veg</option>
+                    <option value="Mostly Veg">Mostly Veg</option>
+                    <option value="Veg & Non-veg">Veg & Non-veg</option>
+                    <option value="Mostly Non-veg">Mostly Non-veg</option>
+                    <option value="Pure Non-veg">Pure Non-veg</option>
+                  </select>
+            </div>
+        </div>
+       
+            <h3>Contact Information</h3>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="country">Country<span class="star">*</span></label>
+                    <select class="form-control country" id="" name="contactInformation.country" onchange = "loadStates()" required>
+                        <option selected>Choose</option>
+                  </select>
+                </div> 
+                <div class="col-md-4 mb-3">
+                    <label for="state">State<span class="star">*</span></label>
+                    <select class="form-control state" id="" name="contactInformation.state" onchange = "loadCities()" required>
+                        <option selected>Choose</option>
+                  </select>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="city">City<span class="star">*</span></label>
+                    <select class="form-control city" id="" name="contactInformation.city" required>
+                        <option selected>Choose</option>
+                  </select>
+                </div>
+            </div>
+           
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="villageTown">Village/Town</label>
+                    <input type="text" class="form-control" id="" placeholder="Village/Town" name="contactInformation.villageTown">
+                </div>
+            
+                <div class="col-md-4 mb-3">
+                    <label for="pin">Pin<span class="star">*</span></label>
+                    <input type="number" class="form-control" id="" placeholder="Pin" name="contactInformation.pin" required>
+                  </div>
+            </div> 
+    
+
+              <!-- <div class="form-group">
+              
+            <label for="image">Choose photo:</label>
+            <input type="file" id="image" name="image" accept="image/png, image/jpeg, image/pdf" />
+
+            
+             
+             <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div> -->
+              <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+
+      <script>
+
+// academic details
+
+function toggleFieldsAcademic(){
+let selectField = document.getElementById("academics");
+let tenthField = document.getElementById("10thFields");
+let diplomaField = document.getElementById("diplomaFields");
+let twelfthField = document.getElementById("12thFields");
+let graduationField = document.getElementById("graduationFields");
+let postGraduationField = document.getElementById("postGraduationFields");
+let phdField = document.getElementById("phdFields");
+
+if(selectField.value === "10th"){
+  tenthField.style.display = "block";
+  diplomaField.style.display = "none";
+  twelfthField.style.display = "none";
+  graduationField.style.display = "none";
+  postGraduationField.style.display = "none";
+  phdField.style.display = "none";
+}else if(selectField.value === "Diploma"){
+  tenthField.style.display = "none";
+  diplomaField.style.display = "block";
+  twelfthField.style.display = "none";
+  graduationField.style.display = "none";
+  postGraduationField.style.display = "none";
+  phdField.style.display = "none";
+}else if(selectField.value === "12th"){
+  tenthField.style.display = "none";
+  diplomaField.style.display = "none";
+  twelfthField.style.display = "block";
+  graduationField.style.display = "none";
+  postGraduationField.style.display = "none";
+  phdField.style.display = "none";
+}else if(selectField.value === "Graduation"){
+  tenthField.style.display = "none";
+  diplomaField.style.display = "none";
+  twelfthField.style.display = "none";
+  graduationField.style.display = "block";
+  postGraduationField.style.display = "none";
+  phdField.style.display = "none";
+}else if(selectField.value === "Post Graduation"){
+  tenthField.style.display = "none";
+  diplomaField.style.display = "none";
+  twelfthField.style.display = "none";
+  graduationField.style.display = "none";
+  postGraduationField.style.display = "block";
+  phdField.style.display = "none";
+}else if(selectField.value === "PhD"){
+  tenthField.style.display = "none";
+  diplomaField.style.display = "none";
+  twelfthField.style.display = "none";
+  graduationField.style.display = "none";
+  postGraduationField.style.display = "none";
+  phdField.style.display = "block";
+}else{
+  tenthField.style.display = "none";
+  diplomaField.style.display = "none";
+  twelfthField.style.display = "none";
+  graduationField.style.display = "none";
+  postGraduationField.style.display = "none";
+  phdField.style.display = "none";
+}
+}
+
+// professional details
+function toggleFields() {
+        let selectElement = document.getElementById("inlineFormCustomSelect");
+        let serviceFields = document.getElementById("serviceFields");
+        let businessFields = document.getElementById("businessFields");
+
+        if (selectElement.value === "1") { // Service selected
+            serviceFields.style.display = "block";
+            businessFields.style.display = "none";
+        } else if (selectElement.value === "2") { // Business selected
+            serviceFields.style.display = "none";
+            businessFields.style.display = "block";
+        } else {
+            serviceFields.style.display = "none";
+            businessFields.style.display = "none";
+        }
+    }
+    //Father details
+    function showFieldsFather() {
+      document.getElementById('aliveFieldsFather').style.display = 'block';
+      document.getElementById('aliveFieldsFather1').style.display = 'block';
+   
+    }
+
+    function hideFieldsFather() {
+      document.getElementById('aliveFieldsFather').style.display = 'none';
+      document.getElementById('aliveFieldsFather1').style.display = 'none';
+   
+    }
+
+    //mother details
+    function showFieldsMother() {
+    
+      document.getElementById('aliveFieldsMother').style.display = 'block';
+      document.getElementById('aliveFieldsMother1').style.display = 'block';
+    }
+
+    function hideFieldsMother() {
+   
+      document.getElementById('aliveFieldsMother').style.display = 'none';
+      document.getElementById('aliveFieldsMother1').style.display = 'none';
+    }
+
+
+    // country,state and city api
+
+let config = {
+  cUrl: 'https://api.countrystatecity.in/v1/countries',
+  cKey: 'cmFxSFkyYjE5MjdXVHZjczgzSllvTTFNUmlHSTJleXRlUWFvRENVUA=='
+}
+
+let countrySelect = document.querySelector('.country'),
+    stateSelect = document.querySelector('.state'),
+    citySelect = document.querySelector('.city');
+
+function loadCountries(){
+  let apiEndPoint = config.cUrl;
+  
+  fetch(apiEndPoint, {headers: {"X-CSCAPI-KEY": config.cKey}})
+    .then(response => response.json())
+    .then(data => {
+      data.forEach(country => {
+        const option = document.createElement('option')
+        option.value = country.iso2
+        option.textContent = country.name
+        countrySelect.appendChild(option)
+      })
+    })
+    .catch(error => console.error('Error loading countries', error));
+  
+  stateSelect.disabled = true;
+  citySelect.disabled = true;
+  stateSelect.style.pointerEvents = 'none';
+  citySelect.style.pointerEvents = 'none';
+}
+
+function loadStates(){
+  stateSelect.disabled = false;
+  citySelect.disabled = true;
+  stateSelect.style.pointerEvents = 'auto';
+  citySelect.style.pointerEvents = 'none';
+  
+  const selectedCountryCode = countrySelect.value;
+  stateSelect.innerHTML = '<option value="">Select state</option>'; // for changing the existing states
+  fetch(`${config.cUrl}/${selectedCountryCode}/states`, {headers: {"X-CSCAPI-KEY": config.cKey}})
+    .then(response => response.json())
+    .then(data => {
+      data.forEach(state => {
+        const option = document.createElement('option')
+        option.value = state.iso2
+        option.textContent = state.name
+        stateSelect.appendChild(option)
+      })
+    })
+    .catch(error => console.error('Error loading state', error));
+}
+
+function loadCities(){
+  citySelect.disabled = false;
+  citySelect.style.pointerEvents = 'auto';
+  
+  const selectedCountryCode = countrySelect.value;
+  const selectedStateCode = stateSelect.value;
+  
+  citySelect.innerHTML = '<option value="">Select city</option>'; // for changing the existing city
+  fetch(`${config.cUrl}/${selectedCountryCode}/states/${selectedStateCode}/cities`, {headers: {"X-CSCAPI-KEY": config.cKey}})
+    .then(response => response.json())
+    .then(data => {
+      data.forEach(city => {
+        const option = document.createElement('option')
+        option.value = city.iso2
+        option.textContent = city.name
+        citySelect.appendChild(option)
+      })
+    })
+    .catch(error => console.error('Error loading city', error));
+}
+
+window.onload = loadCountries;
+
+      </script>
+    
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>     
+</body>
+</html>
+
+

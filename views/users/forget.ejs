@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/public/css/style.css"> -->
+    <title>Forget</title>
+</head>
+<body>
+    <h1>Forget</h1>
+
+    <% if (typeof message !== 'undefined') { %>
+        <p><%= message %></p>
+    <% } %>
+
+    <div class="container">
+        <form class="form-signIn" action="/forget" method="post">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" placeholder="Email" required name="email">
+        </div>
+
+      <input type="submit" value="Send Reset Link">
+        </form>
+        
+        <!-- <a href="/forget">Forget Password</a> -->
+         
+    </div>    
+    
+    </div>
+</body>
+</html>

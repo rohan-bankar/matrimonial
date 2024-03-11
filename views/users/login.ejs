@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login</title>
+</head>
+<body>
+    <h1>login form</h1>
+
+    <% if (typeof message !== 'undefined') { %>
+        <p><%= message %></p>
+    <% } %>
+
+    <div class="container">
+        <form class="form-signIn" action="/login" method="post">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" placeholder="Email" required name="email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" placeholder="Password" required name="password">
+        </div>
+        <!-- <div id="captcha" class="form_div">
+            <div class="preview"></div>
+            <div class="captcha_form"> 
+                <input type="text" id="captcha_form" class="form_input_captcha" placeholder=" ">
+                <label class="form_label_captcha">Enter Captcha</label>
+                <button class="captcha_refersh">
+                    <i class="fa fa-refresh"></i>
+                </button>
+            </div>
+        </div> -->
+
+        <button type="submit">Sign in</button>
+        </form>
+        
+        <a href="/forget">Forget Password</a>
+         
+    </div>    
+    
+    </div>
+</body>
+</html>
